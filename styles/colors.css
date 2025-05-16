@@ -1,0 +1,41 @@
+:root {
+    --color-text-primary: rgba(26, 26, 26, 1);
+    --color-text-primary-inverse: rgba(255, 255, 255, 1);
+    --color-text-secondary: rgba(128, 128, 128, 1);
+    --color-text-tertiary: rgba(178, 178, 178, 1);
+    
+    --color-icon-primary: rgba(26, 26, 26, 1);
+    --color-icon-primary-inverse: rgba(255, 255, 255, 1);
+    --color-icon-secondary: rgba(128, 128, 128, 1);
+    --color-icon-tertiary: rgba(178, 178, 178, 1);
+
+    --color-border-default: rgba(230, 230, 230, 1);
+    --color-border-strong: rgba(22, 22, 22, 1);
+
+    --color-bg-default: rgba(255, 255, 255, 1);
+    --color-bg-hover: rgba(22, 22, 22, 1);
+    --color-bg-secondary: rgba(242, 242, 242, 1);
+
+    --color-sfx-overlay: rgba(255, 255, 255, 0.75); 
+}
+
+[data-theme="dark"] {
+    --color-text-primary: rgba(255, 255, 255, 1);
+    --color-text-primary-inverse: rgba(26, 26, 26, 1);
+    --color-text-secondary: rgba(192, 192, 192, 1);
+    --color-text-tertiary: rgba(128, 128, 128, 1);
+    
+    --color-icon-primary: rgba(255, 255, 255, 1);
+    --color-icon-primary-inverse: rgba(26, 26, 26, 1);
+    --color-icon-secondary: rgba(192, 192, 192, 1);
+    --color-icon-tertiary: rgba(128, 128, 128, 1);
+    
+    --color-border-default: rgba(68, 68, 68, 1);
+    --color-border-strong: rgba(255, 255, 255, 0.9);
+    
+    --color-bg-default: rgba(22, 22, 22, 1);
+    --color-bg-hover: rgba(255, 255, 255, 1);
+    --color-bg-secondary: rgba(54, 54, 54, 1);
+
+    --color-sfx-overlay: rgba(22, 22, 22, 0.75);
+}

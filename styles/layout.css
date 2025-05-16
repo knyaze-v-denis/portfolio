@@ -1,0 +1,186 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 2.5rem;
+    background-color: var(--color-bg-default);
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    @media (max-width: 768px) {
+        padding: 1rem;
+    }
+}
+
+/* Шапка страницы и навигация */
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+
+    @media (max-width: 768px) {
+        padding-bottom: 8rem;
+    }
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-nav {
+    display: flex;
+    gap: 1rem;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.page-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1.25rem;
+
+    position: relative;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+/* Боковая панель */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: start;
+    width: 25%;
+    gap: 4rem;
+
+    position: sticky;
+    top: -1px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        position: relative;
+
+        .footnote, .copy, .theme-toggle, .contacts {
+            display: none;
+        }
+    }
+}
+
+.short-about {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+
+    border-top: 1px solid var(--color-border-strong);
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 100%;
+
+    li {
+        width: 100%;
+    }
+}
+
+
+/* Список проектов */
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 1rem;
+
+    border-top: 1px solid var(--color-border-strong);
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.projects-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.projects-footer {
+    display: flex;
+    padding: 4rem 0rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+/* Мобильное меню */
+.overlay {
+    display: none;
+
+    @media (max-width: 768px) {
+        position: fixed;
+        inset: 0;
+        background: var(--color-sfx-overlay);
+        backdrop-filter: blur(1rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: inherit;
+        z-index: 1000;
+        transition: opacity 0.3s ease;
+        gap: 4rem;
+
+        .menu-title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .menu-header {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .main-nav-mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

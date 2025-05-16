@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2C2C2C" />
+
+        <title>Денис Князев | UX/UI designer</title>
+        <meta name="description" content="Более 3-х лет я проектирую интерфейсы с учётом потребностей людей. Для меня важна не просто эстетика, а то, как продукт помогает человеку.">
+        <meta name="author" content="Денис Князев">
+
+        <link rel="icon" href="assets/icons/favicon.png">
+
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+
+    <body>
+
+        <header class="page-header">
+            <h1 class="page-title text-large-title">
+                <span class="text-primary">Денис Князев</span>
+                <span class="text-secondary">UX/UI дизайнер</span>
+            </h1>
+
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="okak.html" class="nav-link text-large-title text-primary">Портфолио</a></li>
+                    <li><a href="okak.html" class="nav-link text-large-title text-primary">Резюме</a></li>
+                    <li><a href="okak.html" class="nav-link text-large-title text-primary">Обо мне</a></li>
+                </ul>
+            </nav>
+
+            <button id="burger" class="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 17C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18C3 17.4477 3.44772 17 4 17H20ZM20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H20ZM20 5C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6C3 5.44772 3.44772 5 4 5H20Z"/>
+                </svg>
+            </button>
+        </header>
+
+        <div id="overlay" class="overlay hidden">
+            <header class="menu-header">
+                <h1 class="menu-title text-large-title">
+                    <span class="text-primary">Денис Князев</span>
+                    <span class="text-secondary">UX/UI дизайнер</span>
+                </h1>
+                <button id="close" class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.293 5.29303C17.6836 4.9025 18.3166 4.9025 18.7071 5.29303C19.0976 5.68355 19.0976 6.31657 18.7071 6.70709L13.4141 12.0001L18.7071 17.293L18.7759 17.3687C19.0963 17.7615 19.0732 18.341 18.7071 18.7071C18.341 19.0732 17.7615 19.0963 17.3687 18.7759L17.293 18.7071L12.0001 13.4141L6.70709 18.7071C6.31657 19.0976 5.68355 19.0976 5.29303 18.7071C4.9025 18.3166 4.9025 17.6836 5.29303 17.293L10.586 12.0001L5.29303 6.70709L5.22418 6.63141C4.90378 6.23863 4.92689 5.65916 5.29303 5.29303C5.65916 4.92689 6.23863 4.90378 6.63141 5.22418L6.70709 5.29303L12.0001 10.586L17.293 5.29303Z"/>
+                    </svg>
+                </button>
+            </header>
+
+            <nav>
+                <ul class="main-nav-mobile">
+                    <li><a href="okak.html" class="nav-link text-large-title text-primary">Портфолио</a></li>
+                    <li><a href="okak.html" class="nav-link text-large-title text-primary">Резюме</a></li>
+                    <li><a href="okak.html" class="nav-link text-large-title text-primary">Обо мне</a></li>
+                </ul>
+            </nav>
+
+            <nav class="contacts">
+                    <ul class="contacts">
+                        <li>
+                            <a href="https://t.me/knyaze_v_denis" target="_blank" class="contact-link text-body text-primary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M12 11.8333C12 12.2015 11.7015 12.5 11.3333 12.5C10.9651 12.5 10.6667 12.2015 10.6667 11.8333V6.77604L5.13802 12.3047C4.87767 12.565 4.45566 12.565 4.19531 12.3047C3.93496 12.0443 3.93496 11.6223 4.19531 11.362L9.72396 5.83333H4.66667C4.29848 5.83333 4 5.53486 4 5.16667C4 4.79848 4.29848 4.5 4.66667 4.5H11.3333L11.4014 4.50358C11.7376 4.53767 12 4.82145 12 5.16667V11.8333Z"/>
+                                </svg>
+                                <span>Telegram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:knyaze.v.denis@yandex.ru?subject=Запрос%20на%20сотрудничество&body=Привет!%0A%0AЯ увидел твой сайт и хотел бы обсудить возможное сотрудничество.%0A%0AВот немного информации о проекте:%0A– Что за проект:%0A– Ожидаемые сроки:%0A– Бюджет (если есть):%0A%0AБуду рад(а) услышать твоё мнение!%0A%0AС уважением,%0A[Ваше имя]" class="contact-link text-body text-primary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M12 11.8333C12 12.2015 11.7015 12.5 11.3333 12.5C10.9651 12.5 10.6667 12.2015 10.6667 11.8333V6.77604L5.13802 12.3047C4.87767 12.565 4.45566 12.565 4.19531 12.3047C3.93496 12.0443 3.93496 11.6223 4.19531 11.362L9.72396 5.83333H4.66667C4.29848 5.83333 4 5.53486 4 5.16667C4 4.79848 4.29848 4.5 4.66667 4.5H11.3333L11.4014 4.50358C11.7376 4.53767 12 4.82145 12 5.16667V11.8333Z"/>
+                                </svg>
+                                <span>Email</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/knyazevdenis" target="_blank" class="contact-link text-body text-primary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M12 11.8333C12 12.2015 11.7015 12.5 11.3333 12.5C10.9651 12.5 10.6667 12.2015 10.6667 11.8333V6.77604L5.13802 12.3047C4.87767 12.565 4.45566 12.565 4.19531 12.3047C3.93496 12.0443 3.93496 11.6223 4.19531 11.362L9.72396 5.83333H4.66667C4.29848 5.83333 4 5.53486 4 5.16667C4 4.79848 4.29848 4.5 4.66667 4.5H11.3333L11.4014 4.50358C11.7376 4.53767 12 4.82145 12 5.16667V11.8333Z"/>
+                                </svg>
+                                <span>Behance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/knyazev.design?igsh=aDJkZXhpbDF3bmpn&utm_source=qr" target="_blank" class="contact-link text-body text-primary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M12 11.8333C12 12.2015 11.7015 12.5 11.3333 12.5C10.9651 12.5 10.6667 12.2015 10.6667 11.8333V6.77604L5.13802 12.3047C4.87767 12.565 4.45566 12.565 4.19531 12.3047C3.93496 12.0443 3.93496 11.6223 4.19531 11.362L9.72396 5.83333H4.66667C4.29848 5.83333 4 5.53486 4 5.16667C4 4.79848 4.29848 4.5 4.66667 4.5H11.3333L11.4014 4.50358C11.7376 4.53767 12 4.82145 12 5.16667V11.8333Z"/>
+                                </svg>
+                                <span>Instagram*</span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#" class="contact-link text-body text-primary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M12 11.8333C12 12.2015 11.7015 12.5 11.3333 12.5C10.9651 12.5 10.6667 12.2015 10.6667 11.8333V6.77604L5.13802 12.3047C4.87767 12.565 4.45566 12.565 4.19531 12.3047C3.93496 12.0443 3.93496 11.6223 4.19531 11.362L9.72396 5.83333H4.66667C4.29848 5.83333 4 5.53486 4 5.16667C4 4.79848 4.29848 4.5 4.66667 4.5H11.3333L11.4014 4.50358C11.7376 4.53767 12 4.82145 12 5.16667V11.8333Z"/>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li> -->
+                        
+                    </ul>
+                </nav>
+
+                <p class="footnote text-body-small text-tertiary">*Принадлежит компании Meta, признанной экстремистской и запрещённой на территории РФ</p>
+
+                <!-- <button id="theme-toggle-mobile" class="theme-toggle-mobile">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11 22V20C11 19.4477 11.4477 19 12 19C12.5523 19 13 19.4477 13 20V22C13 22.5523 12.5523 23 12 23C11.4477 23 11 22.5523 11 22ZM7.00732 18.4072L5.60693 19.8071C5.2164 20.1976 4.58336 20.1976 4.19287 19.8071C3.80238 19.4166 3.80244 18.7836 4.19287 18.3931L5.59277 16.9927L7.00732 18.4072ZM19.8071 18.3931L19.876 18.4688C20.1963 18.8615 20.1732 19.441 19.8071 19.8071C19.441 20.1732 18.8615 20.1963 18.4688 19.876L18.3931 19.8071L16.9927 18.4072L18.4072 16.9927L19.8071 18.3931ZM5.59277 16.9927C5.9833 16.6022 6.61682 16.6022 7.00732 16.9927C7.39783 17.3832 7.3978 18.0167 7.00732 18.4072L5.59277 16.9927ZM16.9927 16.9927C17.3832 16.6022 18.0167 16.6022 18.4072 16.9927L16.9927 18.4072C16.6022 18.0167 16.6022 17.3832 16.9927 16.9927ZM12 7C12.3984 7 12.7589 7.23657 12.9175 7.60205C13.076 7.96746 13.0025 8.39219 12.7305 8.68311C12.4061 9.02983 12.2289 9.48915 12.2368 9.96387C12.2447 10.4386 12.4368 10.8918 12.7725 11.2275C13.1082 11.5632 13.5614 11.7553 14.0361 11.7632C14.5108 11.7711 14.9702 11.5939 15.3169 11.2695C15.6078 10.9975 16.0325 10.924 16.3979 11.0825C16.7634 11.2411 17 11.6016 17 12C17 12.9889 16.7066 13.9556 16.1572 14.7778C15.6078 15.6 14.8272 16.2412 13.9136 16.6196C12.9999 16.9981 11.9943 17.0967 11.0244 16.9038C10.0546 16.7109 9.16358 16.2349 8.46436 15.5356C7.76513 14.8364 7.28914 13.9454 7.09619 12.9756C6.90327 12.0057 7.00193 11.0001 7.38037 10.0864C7.75881 9.17283 8.39996 8.39217 9.22217 7.84277C10.0444 7.29337 11.0111 7 12 7ZM10.2559 9.55908C9.79967 9.88505 9.44356 10.3329 9.22852 10.8521C9.00146 11.4002 8.94186 12.0035 9.05762 12.5854C9.17339 13.1673 9.45939 13.7016 9.87891 14.1211C10.2984 14.5406 10.8327 14.8266 11.4146 14.9424C11.9965 15.0581 12.5998 14.9985 13.1479 14.7715C13.6671 14.5564 14.1145 14.1999 14.4404 13.7437C14.2957 13.7578 14.1497 13.7651 14.0029 13.7627C13.0094 13.7461 12.061 13.3442 11.3584 12.6416C10.6558 11.939 10.2539 10.9906 10.2373 9.99707C10.2349 9.85012 10.2416 9.70396 10.2559 9.55908ZM4 11C4.55228 11 5 11.4477 5 12C5 12.5523 4.55228 13 4 13H2C1.44772 13 1 12.5523 1 12C1 11.4477 1.44772 11 2 11H4ZM22 11C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H20C19.4477 13 19 12.5523 19 12C19 11.4477 19.4477 11 20 11H22ZM7.00732 5.59277C7.3978 5.9833 7.39783 6.61682 7.00732 7.00732C6.61682 7.39783 5.9833 7.3978 5.59277 7.00732L7.00732 5.59277ZM18.4072 7.00732C18.0167 7.3978 17.3832 7.39783 16.9927 7.00732C16.6022 6.61682 16.6022 5.9833 16.9927 5.59277L18.4072 7.00732ZM4.19287 4.19287C4.55897 3.82677 5.13848 3.80372 5.53125 4.12402L5.60693 4.19287L7.00732 5.59277L5.59277 7.00732L4.19287 5.60693L4.12402 5.53125C3.80372 5.13848 3.82677 4.55897 4.19287 4.19287ZM18.4688 4.12402C18.8615 3.80372 19.441 3.82677 19.8071 4.19287C20.1732 4.55897 20.1963 5.13848 19.876 5.53125L19.8071 5.60693L18.4072 7.00732L16.9927 5.59277L18.3931 4.19287L18.4688 4.12402ZM11 4V2C11 1.44772 11.4477 1 12 1C12.5523 1 13 1.44772 13 2V4C13 4.55228 12.5523 5 12 5C11.4477 5 11 4.55228 11 4Z"/>
+                    </svg>
+                </button> -->
+
+            <p class="copy text-body-small text-tertiary">&copy;2025 Денис Князев</p>
+
+        </div>
+
+        <main class="page-content">
+            <aside class="sidebar">
+                <section class="short-about">
+                    <h2 class="text-body text-secondary">Обо мне</h2>
+                    <p class="text-body text-primary">Более 3-х лет я проектирую интерфейсы с учётом потребностей людей. Для меня важна не просто эстетика, а то, как продукт помогает человеку.</p>
+                    <p class="text-body text-primary">Я верю, что сильный дизайн — это про понимание задачи, контекста и жизни человека, который окажется по ту сторону экрана.</p>
+                </section>
+
+                <nav class="contacts">
+                    <ul class="contacts">
+                        <li>
+                            <a href="https://t.me/knyaze_v_denis" target="_blank" class="contact-link text-body text-primary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M12 11.8333C12 12.2015 11.7015 12.5 11.3333 12.5C10.9651 12.5 10.6667 12.2015 10.6667 11.8333V6.77604L5.13802 12.3047C4.87767 12.565 4.45566 12.565 4.19531 12.3047C3.93496 12.0443 3.93496 11.6223 4.19531 11.362L9.72396 5.83333H4.66667C4.29848 5.83333 4 5.53486 4 5.16667C4 4.79848 4.29848 4.5 4.66667 4.5H11.3333L11.4014 4.50358C11.7376 4.53767 12 4.82145 12 5.16667V11.8333Z"/>
+                                </svg>
+                                <span>Telegram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:knyaze.v.denis@yandex.ru?subject=Запрос%20на%20сотрудничество&body=Привет!%0A%0AЯ увидел твой сайт и хотел бы обсудить возможное сотрудничество.%0A%0AВот немного информации о проекте:%0A– Что за проект:%0A– Ожидаемые сроки:%0A– Бюджет (если есть):%0A%0AБуду рад(а) услышать твоё мнение!%0A%0AС уважением,%0A[Ваше имя]" class="contact-link text-body text-primary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M12 11.8333C12 12.2015 11.7015 12.5 11.3333 12.5C10.9651 12.5 10.6667 12.2015 10.6667 11.8333V6.77604L5.13802 12.3047C4.87767 12.565 4.45566 12.565 4.19531 12.3047C3.93496 12.0443 3.93496 11.6223 4.19531 11.362L9.72396 5.83333H4.66667C4.29848 5.83333 4 5.53486 4 5.16667C4 4.79848 4.29848 4.5 4.66667 4.5H11.3333L11.4014 4.50358C11.7376 4.53767 12 4.82145 12 5.16667V11.8333Z"/>
+                                </svg>
+                                <span>Email</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/knyazevdenis" target="_blank" class="contact-link text-body text-primary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M12 11.8333C12 12.2015 11.7015 12.5 11.3333 12.5C10.9651 12.5 10.6667 12.2015 10.6667 11.8333V6.77604L5.13802 12.3047C4.87767 12.565 4.45566 12.565 4.19531 12.3047C3.93496 12.0443 3.93496 11.6223 4.19531 11.362L9.72396 5.83333H4.66667C4.29848 5.83333 4 5.53486 4 5.16667C4 4.79848 4.29848 4.5 4.66667 4.5H11.3333L11.4014 4.50358C11.7376 4.53767 12 4.82145 12 5.16667V11.8333Z"/>
+                                </svg>
+                                <span>Behance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/knyazev.design?igsh=aDJkZXhpbDF3bmpn&utm_source=qr" target="_blank" class="contact-link text-body text-primary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M12 11.8333C12 12.2015 11.7015 12.5 11.3333 12.5C10.9651 12.5 10.6667 12.2015 10.6667 11.8333V6.77604L5.13802 12.3047C4.87767 12.565 4.45566 12.565 4.19531 12.3047C3.93496 12.0443 3.93496 11.6223 4.19531 11.362L9.72396 5.83333H4.66667C4.29848 5.83333 4 5.53486 4 5.16667C4 4.79848 4.29848 4.5 4.66667 4.5H11.3333L11.4014 4.50358C11.7376 4.53767 12 4.82145 12 5.16667V11.8333Z"/>
+                                </svg>
+                                <span>Instagram*</span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#" target="_blank" class="contact-link text-body text-primary">
+                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M12 11.8333C12 12.2015 11.7015 12.5 11.3333 12.5C10.9651 12.5 10.6667 12.2015 10.6667 11.8333V6.77604L5.13802 12.3047C4.87767 12.565 4.45566 12.565 4.19531 12.3047C3.93496 12.0443 3.93496 11.6223 4.19531 11.362L9.72396 5.83333H4.66667C4.29848 5.83333 4 5.53486 4 5.16667C4 4.79848 4.29848 4.5 4.66667 4.5H11.3333L11.4014 4.50358C11.7376 4.53767 12 4.82145 12 5.16667V11.8333Z"/>
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li> -->
+                        
+                    </ul>
+                </nav>
+
+                <p class="footnote text-body-small text-tertiary">*Принадлежит компании Meta, признанной экстремистской и запрещённой на территории РФ</p>
+
+                <button id="theme-toggle" class="theme-toggle">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11 22V20C11 19.4477 11.4477 19 12 19C12.5523 19 13 19.4477 13 20V22C13 22.5523 12.5523 23 12 23C11.4477 23 11 22.5523 11 22ZM7.00732 18.4072L5.60693 19.8071C5.2164 20.1976 4.58336 20.1976 4.19287 19.8071C3.80238 19.4166 3.80244 18.7836 4.19287 18.3931L5.59277 16.9927L7.00732 18.4072ZM19.8071 18.3931L19.876 18.4688C20.1963 18.8615 20.1732 19.441 19.8071 19.8071C19.441 20.1732 18.8615 20.1963 18.4688 19.876L18.3931 19.8071L16.9927 18.4072L18.4072 16.9927L19.8071 18.3931ZM5.59277 16.9927C5.9833 16.6022 6.61682 16.6022 7.00732 16.9927C7.39783 17.3832 7.3978 18.0167 7.00732 18.4072L5.59277 16.9927ZM16.9927 16.9927C17.3832 16.6022 18.0167 16.6022 18.4072 16.9927L16.9927 18.4072C16.6022 18.0167 16.6022 17.3832 16.9927 16.9927ZM12 7C12.3984 7 12.7589 7.23657 12.9175 7.60205C13.076 7.96746 13.0025 8.39219 12.7305 8.68311C12.4061 9.02983 12.2289 9.48915 12.2368 9.96387C12.2447 10.4386 12.4368 10.8918 12.7725 11.2275C13.1082 11.5632 13.5614 11.7553 14.0361 11.7632C14.5108 11.7711 14.9702 11.5939 15.3169 11.2695C15.6078 10.9975 16.0325 10.924 16.3979 11.0825C16.7634 11.2411 17 11.6016 17 12C17 12.9889 16.7066 13.9556 16.1572 14.7778C15.6078 15.6 14.8272 16.2412 13.9136 16.6196C12.9999 16.9981 11.9943 17.0967 11.0244 16.9038C10.0546 16.7109 9.16358 16.2349 8.46436 15.5356C7.76513 14.8364 7.28914 13.9454 7.09619 12.9756C6.90327 12.0057 7.00193 11.0001 7.38037 10.0864C7.75881 9.17283 8.39996 8.39217 9.22217 7.84277C10.0444 7.29337 11.0111 7 12 7ZM10.2559 9.55908C9.79967 9.88505 9.44356 10.3329 9.22852 10.8521C9.00146 11.4002 8.94186 12.0035 9.05762 12.5854C9.17339 13.1673 9.45939 13.7016 9.87891 14.1211C10.2984 14.5406 10.8327 14.8266 11.4146 14.9424C11.9965 15.0581 12.5998 14.9985 13.1479 14.7715C13.6671 14.5564 14.1145 14.1999 14.4404 13.7437C14.2957 13.7578 14.1497 13.7651 14.0029 13.7627C13.0094 13.7461 12.061 13.3442 11.3584 12.6416C10.6558 11.939 10.2539 10.9906 10.2373 9.99707C10.2349 9.85012 10.2416 9.70396 10.2559 9.55908ZM4 11C4.55228 11 5 11.4477 5 12C5 12.5523 4.55228 13 4 13H2C1.44772 13 1 12.5523 1 12C1 11.4477 1.44772 11 2 11H4ZM22 11C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H20C19.4477 13 19 12.5523 19 12C19 11.4477 19.4477 11 20 11H22ZM7.00732 5.59277C7.3978 5.9833 7.39783 6.61682 7.00732 7.00732C6.61682 7.39783 5.9833 7.3978 5.59277 7.00732L7.00732 5.59277ZM18.4072 7.00732C18.0167 7.3978 17.3832 7.39783 16.9927 7.00732C16.6022 6.61682 16.6022 5.9833 16.9927 5.59277L18.4072 7.00732ZM4.19287 4.19287C4.55897 3.82677 5.13848 3.80372 5.53125 4.12402L5.60693 4.19287L7.00732 5.59277L5.59277 7.00732L4.19287 5.60693L4.12402 5.53125C3.80372 5.13848 3.82677 4.55897 4.19287 4.19287ZM18.4688 4.12402C18.8615 3.80372 19.441 3.82677 19.8071 4.19287C20.1732 4.55897 20.1963 5.13848 19.876 5.53125L19.8071 5.60693L18.4072 7.00732L16.9927 5.59277L18.3931 4.19287L18.4688 4.12402ZM11 4V2C11 1.44772 11.4477 1 12 1C12.5523 1 13 1.44772 13 2V4C13 4.55228 12.5523 5 12 5C11.4477 5 11 4.55228 11 4Z"/>
+                    </svg>
+                </button>
+
+                <p class="copy text-body-small text-tertiary">&copy;2025 Денис Князев</p>
+            </aside>
+
+            <section class="projects">
+                <header class="projects-header">
+                    <h2 class="text-body text-secondary">Проекты</h2>
+                    <a href="okak.html" class="link-button text-body text-tertiary">(Все)</a>
+                </header>
+
+                <div class="projects-list">
+                    <article class="project-card">
+                        <a href="okak.html">
+                            <img class="project-cover" src="assets/images/uds-cover.png">
+                        </a>
+
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h3 class="text-title text-primary">Umnogor Design Sysytem</h3>
+                                <p class="text-body text-secondary">Матрикс</p>
+                                <p class="text-body text-secondary">Декабрь 2025 — Февраль 2025 / 3 месяца</p>
+                                
+                                <ul class="tag-list">
+                                    <li class="tag text-body-small text-secondary">Design System</li>
+                                    <li class="tag text-body-small text-secondary">Web</li>
+                                    <li class="tag text-body-small text-secondary">Внутренний продукт</li>
+                                    <li class="tag text-body-small text-secondary">ЖКХ</li>
+                                    <li class="tag text-body-small text-secondary">Строительство</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-description">
+                                <p class="text-body text-primary">Разработка дизайн-системы для экосистемы цифровых продуктов UMNOGOR.</p>
+                                <a href="okak.html" class="project-link text-body text-secondary">
+                                    <span>Смотреть проект</span>
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                        <path d="M7.528 3.36186C7.77208 3.11777 8.1584 3.10236 8.42025 3.31596L8.4707 3.36186L13.1374 8.02852C13.3977 8.28887 13.3977 8.71088 13.1374 8.97123L8.4707 13.6379C8.21035 13.8982 7.78834 13.8982 7.528 13.6379C7.26765 13.3775 7.26765 12.9555 7.528 12.6952L11.0566 9.16654H3.33268C2.96449 9.16654 2.66602 8.86807 2.66602 8.49988C2.66602 8.13169 2.96449 7.83321 3.33268 7.83321H11.0566L7.528 4.30456L7.4821 4.25411C7.2685 3.99226 7.28391 3.60594 7.528 3.36186Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project-card">
+                        <a href="okak.html">
+                            <img class="project-cover" src="assets/images/lock-box-cover.png">
+                        </a>
+
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h3 class="text-title text-primary">Мобильное приложение LockBox</h3>
+                                <p class="text-body text-secondary">ООО "Умные решения для вашего дома"</p>
+                                <p class="text-body text-secondary">3 месяца</p>
+                                
+                                <ul class="tag-list">
+                                    <li class="tag text-body-small text-secondary">Mobile</li>
+                                    <li class="tag text-body-small text-secondary">MVP</li>
+                                    <li class="tag text-body-small text-secondary">Недвижимость</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-description">
+                                <p class="text-body text-primary">LLock Box - это приложение, используемое для управления устройствами удаленного доступа к недвижимости для арендаторов или поставщиков услуг, позволяющее им получать доступ к недвижимости в удобное время без присутствия владельца..</p>
+                                <a href="okak.html" class="project-link text-body text-secondary">
+                                    <span>Смотреть проект</span>
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                                        <path d="M7.528 3.36186C7.77208 3.11777 8.1584 3.10236 8.42025 3.31596L8.4707 3.36186L13.1374 8.02852C13.3977 8.28887 13.3977 8.71088 13.1374 8.97123L8.4707 13.6379C8.21035 13.8982 7.78834 13.8982 7.528 13.6379C7.26765 13.3775 7.26765 12.9555 7.528 12.6952L11.0566 9.16654H3.33268C2.96449 9.16654 2.66602 8.86807 2.66602 8.49988C2.66602 8.13169 2.96449 7.83321 3.33268 7.83321H11.0566L7.528 4.30456L7.4821 4.25411C7.2685 3.99226 7.28391 3.60594 7.528 3.36186Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <footer class="projects-footer">
+                    <a href="https://t.me/knyaze_v_denis" target="_blank" class="nav-link text-large-title text-primary">Связаться со мной</a>
+                    <a href="#" class="link-button text-large-title text-tertiary">Наверх</a>
+                </footer>
+
+            </section>
+        </main>
+
+
+        <script>
+            const html = document.documentElement;
+            const toggle = document.getElementById('theme-toggle');
+
+            // 1. Проверяем, была ли уже сохранена тема
+            const savedTheme = localStorage.getItem('theme');
+
+            if (savedTheme) {
+                html.setAttribute('data-theme', savedTheme);
+            } else {
+                // 2. Иначе определяем по системной настройке
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                html.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+            }
+
+            // 3. Переключение вручную
+            toggle.addEventListener('click', () => {
+                const current = html.getAttribute('data-theme');
+                const next = current === 'dark' ? 'light' : 'dark';
+                html.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next); // сохраняем выбор
+            });
+        </script>
+
+
+        <script>
+            const burger = document.getElementById('burger');
+            const overlay = document.getElementById('overlay');
+            const closeBtn = document.getElementById('close');
+
+            // Показать меню
+            burger.addEventListener('click', () => {
+            overlay.classList.remove('hidden');
+            overlay.classList.add('show');
+            });
+
+            // Скрыть меню
+            closeBtn.addEventListener('click', () => {
+            overlay.classList.remove('show');
+            overlay.classList.add('hidden');
+            });
+
+            // Клик вне меню (по затемнённому фону)
+            overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                overlay.classList.remove('show');
+                overlay.classList.add('hidden');
+            }
+            });
+        </script>
+    </body>
+</html>

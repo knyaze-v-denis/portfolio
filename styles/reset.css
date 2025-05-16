@@ -1,0 +1,106 @@
+/* ========================================
+   Reset.css — полное обнуление браузерных стилей
+   ======================================== */
+
+/* Универсальный сброс и box-sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Базовые теги */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1;
+  background: none;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Текстовые элементы */
+h1, h2, h3, h4, h5, h6,
+p, span, strong, em, b, i,
+blockquote, pre, code,
+abbr, mark {
+  font: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-style: normal;
+  background: none;
+  border: 0;
+  text-decoration: none;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+mark {
+  background: transparent;
+}
+
+/* Списки */
+ul, ol {
+  list-style: none;
+}
+
+/* Ссылки */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Таблицы */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Формы и элементы управления */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Дополнительно для форм */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/* Мультимедиа */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
